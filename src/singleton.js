@@ -28,6 +28,4 @@ Raven.noConflict = function () {
 	return Raven;
 };
 
-Raven.afterLoad();
-
 module.exports = Raven;

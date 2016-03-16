@@ -663,13 +663,6 @@ Raven.prototype = {
     },
 
     afterLoad: function () {
-        // TODO: remove window dependence?
-
-        // Attempt to initialize Raven on load
-        var RavenConfig = _window.RavenConfig;
-        if (RavenConfig) {
-            this.config(RavenConfig.dsn, RavenConfig.config).install();
-        }
     },
 
     showReportDialog: function (options) {
